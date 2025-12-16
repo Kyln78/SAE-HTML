@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <title>Inscription</title>
     <link rel="stylesheet" href="css/styles.css">
-    <title>Connexion</title>
 </head>
 <body>
 <header class="header">
@@ -32,31 +32,42 @@
         </ul>
     </nav>
 </header>
-<h2>Connexion</h2>
+<h2>Inscription</h2>
 
-<form action="/connexion" method="post">
+<form action="/inscription" method="post">
     <fieldset>
-        <legend>Se connecter à votre compte</legend>
+        <legend>Créer votre compte</legend>
+
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" id="prenom" name="prenom" required><br><br>
 
         <label for="email">Email :</label><br>
         <input type="email" id="email" name="email" required><br><br>
 
         <label for="password">Mot de passe :</label><br>
-        <input type="password" id="password" name="password" required><br><br>
+        <input type="password" id="password" name="password" required minlength="6"><br>
+        <small>Minimum 6 caractères</small><br><br>
+
+        <label for="password_confirm">Confirmer le mot de passe :</label><br>
+        <input type="password" id="password_confirm" name="password_confirm" required minlength="6"><br><br>
+
+        <label for="date_naissance">Date de naissance :</label><br>
+        <input type="date" id="date_naissance" name="date_naissance" required><br><br>
 
         <label>
-            <input type="checkbox" name="remember" value="1">
-            Se souvenir de moi
+            <input type="checkbox" name="accepte_conditions" value="1" >
+            J'accepte les conditions d'utilisation
         </label><br><br>
 
-        <button type="submit">Se connecter</button>
+        <button type="submit">S'inscrire</button>
     </fieldset>
 </form>
 
+<hr>
 
-
-
-
-<p>Pas encore de compte ? <a href="inscription.html">Créer un compte</a></p>
+<p>Déjà un compte ? <a href="connexion.html">Se connecter</a></p>
 </body>
 </html>
