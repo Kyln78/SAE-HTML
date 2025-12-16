@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+    <h1 class="titre">SAE 2.05 & SAE 2.06</h1>
+
+    <p class="sous-titre">
+        <strong>
+            <br> S1.05 – Recueil des besoins clients <br>
+            S1.06 – Découverte de l’environnement économique et écologique
+        </strong>
+    </p>
+
+    <figure class="logo">
+        <img src="logouvsq.jpg" alt="Logo de l'IUT Vélizy-Villacoublay">
+    </figure>
+
+    <nav class="navigation">
+        <ul class="menu">
+            <li><a href="page1.html">Page 1</a></li>
+            <li><a href="page2.html">Page 2</a></li>
+            <li><a href="page3.html">Page 3</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="connexion.html">Connexion ?</a></li>
+        </ul>
+    </nav>
+</header>
+<h2>Inscription</h2>
+
+<form action="/inscription" method="post">
+    <fieldset>
+        <legend>Créer votre compte</legend>
+
+        <label for="nom">Nom :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <label for="prenom">Prénom :</label><br>
+        <input type="text" id="prenom" name="prenom" required><br><br>
+
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Mot de passe :</label><br>
+        <input type="password" id="password" name="password" required minlength="6"><br>
+        <small>Minimum 6 caractères</small><br><br>
+
+        <label for="password_confirm">Confirmer le mot de passe :</label><br>
+        <input type="password" id="password_confirm" name="password_confirm" required minlength="6"><br><br>
+
+        <label for="date_naissance">Date de naissance :</label><br>
+        <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+
+        <label>
+            <input type="checkbox" name="accepte_conditions" value="1" >
+            J'accepte les conditions d'utilisation
+        </label><br><br>
+
+        <button type="submit">S'inscrire</button>
+    </fieldset>
+</form>
+
+<hr>
+
+<p>Déjà un compte ? <a href="connexion.html">Se connecter</a></p>
+</body>
+</html>
