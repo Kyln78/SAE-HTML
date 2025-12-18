@@ -10,7 +10,6 @@ header {
     padding: 40px;
     background-color: #e0e0e0;
     text-align: center;
-
 }
 
 header h1 {
@@ -23,14 +22,16 @@ header sub {
 }
 
 .logo img {
-    width: 200px;
+    width: 400px;
     margin-top: 10px;
 }
-nav{
-    justify-content: space-between;
+
+nav {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
 }
+
 .navigation ul {
     list-style: none;
     padding: 0;
@@ -42,6 +43,7 @@ nav{
     display: inline-block;
     margin: 0 20px;
     background-color: #c0c0c0;
+    border-radius: 5px;
 }
 
 .navigation a {
@@ -73,7 +75,7 @@ article {
     margin: 50px 0;
     background-color: #ffffff;
     border-radius: 50px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 article h3 {
@@ -120,24 +122,34 @@ main section a {
     border-radius: 4px;
 }
 
-article, section {
+
+section {
     scroll-margin-top: 80px;
 }
+
 table {
     border-collapse: collapse;
-
     margin: 20px auto;
 }
 
-th, td {
+th,
+td {
     border: 1px solid black;
     padding: 8px;
     text-align: center;
-
 }
 
 th {
-
-    background-color : darkgray;
+    background-color: darkgray;
 }
-
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.img_index {
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
