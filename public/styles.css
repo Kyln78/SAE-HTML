@@ -1,4 +1,4 @@
-/* Global */
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* Header */
+
 header {
     padding: 40px;
     background-color: #e0e0e0;
@@ -29,7 +29,7 @@ header sub {
     margin-top: 10px;
 }
 
-/* Navigation */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -66,7 +66,7 @@ nav {
     border-radius: 15px;
 }
 
-/* Section */
+
 section {
     padding: 40px;
     margin: 80px 0;
@@ -164,7 +164,7 @@ main section a:hover {
     color: white;
 }
 
-/* Menu entreprises centré */
+
 main section .menu {
     justify-content: center;
     align-items: center;
@@ -219,7 +219,7 @@ footer {
     font-size: 14px;
 }
 
-/* Formulaires Inscription et Connexion */
+
 h1, h2 {
     text-align: center;
     margin: 30px 0;
